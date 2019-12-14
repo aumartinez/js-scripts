@@ -22,7 +22,6 @@ function pipeline (n, ...args) {
 }
 
 // piping the same value
-
 pipeline(
 5,
 double,
