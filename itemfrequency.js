@@ -21,4 +21,4 @@ function findMostFrequent(arr) {
   return item;
 }
 
-findMoreFrequent(arr); //apple
+findMostFrequent(arr); //apple
