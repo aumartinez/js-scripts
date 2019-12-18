@@ -1,3 +1,5 @@
+let arr =['pear', 'apple', 'orange', 'apple'];
+
 function findMoreFrequent(arr) {
   let mf = 1;
   let m = 0;
