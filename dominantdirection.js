@@ -75,3 +75,15 @@ function findScriptByName(name, scriptBase) {
     }
   }
 }
+
+// Testing
+
+let str = "";
+
+str = "Hello";
+dominantDirection(str, SCRIPTS);
+// ltr
+
+str = "Hey, مساء الخير";
+dominantDirection(str, SCRIPTS);
+// rtl
