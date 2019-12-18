@@ -77,7 +77,6 @@ function findScriptByName(name, scriptBase) {
 }
 
 // Testing
-
 let str = "";
 
 str = "Hello";
