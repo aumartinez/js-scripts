@@ -1,6 +1,6 @@
-let arr =['pear', 'apple', 'orange', 'apple'];
+let arr = ['pear', 'apple', 'orange', 'apple', 'banana'];
 
-function findMoreFrequent(arr) {
+function findMostFrequent(arr) {
   let mf = 1;
   let m = 0;
   let item;
