@@ -1,7 +1,6 @@
 // Example return the dominant direction from a given string
 // Using the SCRIPTS.js object
 
-
 function dominantDirection(str, scriptBase) {
   let scriptArr = [];
   let code;
