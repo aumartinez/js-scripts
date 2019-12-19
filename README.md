@@ -1,2 +1,2 @@
 # js-scripts
-JS Scripts collections
+JS Scripts collection
