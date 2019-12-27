@@ -10,3 +10,31 @@ const points = [
   "Marketplace-Post Office",     "Marketplace-Shop",
   "Marketplace-Town Hall",       "Shop-Town Hall"
 ];
+
+function buildMap(points) {
+  //Initialize empty town object
+  let townMap = {};
+  
+  //Loop through pair of points
+  //Map method to create the array pair for each point
+  for (let [a, b] of points.map(function(start){return start.split("-");})){
+    //Add starting point from a to b
+    addPoint(a, b);
+    //Add return point from b to a
+    addPoint(b, a);
+  }
+  
+  //Add points to map
+  function addPoint(a, b) {
+    //If starting point does not exists add it
+    if (typeof townMap[a] == undefined) {
+      townMap[a] = [b];
+    }
+    //Else starting point already exists, then add node linked to it
+    else {
+      townMap[a].push(b);
+    }
+  }
+  
+  return townMap;  
+}
