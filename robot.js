@@ -38,3 +38,5 @@ function buildMap(points) {
   
   return townMap;  
 }
+
+const townMap = buildMap(points);
