@@ -21,7 +21,7 @@ function buildMap(points) {
     if (!townMap.hasOwnProperty(a)) {
       townMap[a] = [b];
     }
-    //Else add the destination point
+    //Else add starting point including the destination point
     else {      
       townMap[a].push(b);
     }
