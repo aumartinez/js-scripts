@@ -29,7 +29,7 @@ function buildMap(points) {
   
   //Loop through pair of points
   //Map method to create the array pair for each point
-  for (let [a, b] of points.map(function(start){return start.split("-");})){
+  for (let [a, b] of points.map(function(pair){return pair.split("-");})){
     //Add starting point from a to b
     addPoint(a, b);
     //Add return point from b to a
