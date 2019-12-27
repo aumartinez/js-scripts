@@ -15,6 +15,18 @@ function buildMap(points) {
   //Initialize empty town object
   let townMap = {};
   
+  //Add points to map
+  function addPoint(a, b) {    
+    //If starting point does not exists add it
+    if (!townMap.hasOwnProperty(a)) {
+      townMap[a] = [b];
+    }
+    //Else add the destination point
+    else {      
+      townMap[a].push(b);
+    }
+  }
+  
   //Loop through pair of points
   //Map method to create the array pair for each point
   for (let [a, b] of points.map(function(start){return start.split("-");})){
@@ -22,18 +34,6 @@ function buildMap(points) {
     addPoint(a, b);
     //Add return point from b to a
     addPoint(b, a);
-  }
-  
-  //Add points to map
-  function addPoint(a, b) {
-    //If starting point does not exists add it
-    if (typeof townMap[a] == undefined) {
-      townMap[a] = [b];
-    }
-    //Else starting point already exists, then add node linked to it
-    else {
-      townMap[a].push(b);
-    }
   }
   
   return townMap;  
