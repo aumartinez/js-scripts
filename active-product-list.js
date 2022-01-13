@@ -1,5 +1,3 @@
-```JavaScript
-
 let accdids = `
 ACCOUNT1
 ACCOUNT2
@@ -95,5 +93,3 @@ Promise.all(promises)
   console.log("Final state completed");  
   json_to_csv(json_str);
 });
-
-```
